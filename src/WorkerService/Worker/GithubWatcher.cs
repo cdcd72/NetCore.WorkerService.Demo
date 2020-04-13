@@ -45,7 +45,7 @@ namespace WorkerService.Worker
             {
                 _logger.LogInformation("GithubWatcher running at: {time}", DateTimeOffset.Now);
 
-                string userInfo = await GetUserInfo("cdcd72");
+                string userInfo = await GetUserInfo(_githubWatcherSettings.GithubWatcher.User);
 
                 _logger.LogInformation(userInfo);
 

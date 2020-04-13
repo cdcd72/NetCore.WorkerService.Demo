@@ -5,6 +5,6 @@
     /// </summary>
     public class GithubWatcherOption : BaseOption 
     { 
-        
+        public string User { get; set; }
     }
 }
